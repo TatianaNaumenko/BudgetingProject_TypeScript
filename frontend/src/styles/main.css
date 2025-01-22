@@ -1,0 +1,223 @@
+@font-face {
+   font-family: "Roboto-400";
+   src: url(../fonts/Roboto-Regular.ttf) format('truetype');
+}
+
+
+@font-face {
+   font-family: "Roboto-500";
+   src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+
+/* * {
+  
+} */
+
+
+body {
+
+   font-family: 'Roboto-400', sans-serif;
+   box-sizing: border-box;
+   overflow: hidden;
+
+}
+
+.registration-content {
+   max-width: 397px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   height: 100vh;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
+.main-content-wrapper {
+   overflow-y: scroll;
+   width: 100%;
+}
+
+.main-container {
+   margin: 0 
+}
+
+.logo-content {
+   margin-bottom: 60px;
+}
+
+.title-content {
+   margin-bottom: 20px;
+   color: #052C65;
+   font-size: 40px;
+   font-family: "Roboto-500", sans-serif;
+
+}
+
+.input-group-text{
+   height: 38px;
+}
+
+.reference-to-registration, .form-check-label  {
+   font-size: 12px;
+}
+.form-control::placeholder {
+   font-size: 15px;
+   line-height: 24px;
+   color: #6C757D;
+
+
+}
+.new-card a {
+   font-size: 15px;
+   color: #CED4DA;
+   
+}
+
+.new-card a:hover {
+   color: #052C65;
+}
+
+
+
+/* .days-navigation {
+   gap: 20px;
+} */
+
+.remember-me>label {
+   font-size: 12px;
+   font-weight: 400;
+   line-height: 23px;
+   text-align: left;
+   color: #000000;
+
+}
+
+.form-check {
+   margin-bottom: 20px;
+}
+
+.create-edit {
+   max-width: 400px;
+}
+
+.budgeting-table {
+   max-width: 1101px;
+}
+
+.days-navigation {
+   margin-bottom: 40px;
+   margin-left: 60px;
+}
+
+.days-navigation li {
+   width: 100px;
+}
+
+/* .main-diagramm  {
+   /* margin-left: 84px; */
+
+
+
+.btn-container {
+   padding-left: 0;
+}
+
+
+.card {
+max-width: 352px;
+   height: 100%;
+   border-radius: 12px;
+
+}
+
+.new-card {
+   cursor: pointer; 
+   max-width: 352px;
+}
+.data-period {
+   display: flex;
+}
+
+.data-period input {
+   cursor: pointer;
+   margin-right: 15px;
+}
+
+.order-tools a {
+   margin-right: 10px;
+}
+
+form {
+  width:  397px;
+}
+
+.container-fluid{
+   padding: 0;
+}
+.form-wrapper {
+   max-width: 397px;
+   margin-left: 60px;
+}
+ .form-select, .form-control {
+   margin-bottom: 10px;
+   height: 38px;
+ }
+ .btn-wrapper {
+margin-top: 20px;
+ }
+.container {
+   padding-left: 60px;
+}
+/* charts */
+
+.main-charts {
+   margin-top: 116px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 84px;
+}
+.separator {
+   width: 2px;
+   background-color: #D9D9D9;
+   height: 450px;
+   margin-top: 90px;
+}
+
+.chart-container canvas {
+   max-width:  360px;
+   height: 360px;
+}
+.chart-name {
+
+font-family: "Roboto-500";
+font-size: 28px;
+color: #290661;
+text-align: center;
+margin-bottom: 40px;
+}
+
+.create-button {
+margin-left: 60px;
+}
+/* .sidebar_toggler {
+   display: none;
+   width: 50px;
+   height: 50px;
+
+   
+} */
+/* 
+.sidebar_toggler div {
+   background-color: #000000;
+   width: 100%;
+   height: 2.4px;
+   margin-bottom: 10px; */
+
+/*    
+   transition: all 0.3s ease;
+   pointer-events: none; */
+ /* } */

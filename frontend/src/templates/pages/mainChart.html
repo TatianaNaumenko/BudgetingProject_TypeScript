@@ -1,0 +1,61 @@
+<section class="diagramma">
+
+ 
+   <ul class="days-navigation d-flex flex-wrap p-0  mt-4 list-unstyled col-12">
+      <li class=" mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100 " data-period="today" id="today">
+            Сегодня
+         </a>
+      </li>
+      <li class="ms-4 mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100" data-period="week" id="week">
+            Неделя
+         </a>
+      </li>
+      <li class="ms-4 mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100" data-period="month">
+            Месяц
+         </a>
+      </li>
+      <li class="ms-4 mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100" data-period="year">
+            Год
+         </a>
+      </li>
+      <li class="ms-4 mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100 active" data-period="all">
+            Все
+         </a>
+      </li>
+      <li class="ms-4 mt-2">
+         <a href="javascript:void(0)" class="select-interval btn btn-outline-secondary w-100" data-period="interval">
+            Интервал
+         </a>
+      </li>
+      <li class="data-period ms-4 mt-2">
+                     
+                                <label for="start-date">c</label>
+                                <input type="text" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+                                id="start-date" name="start" placeholder="Дата" class="date text-decoration-underline border-0"
+                                style="width: 100px; display: inline-block;">
+                                
+                                <label for="end-date">по</label>
+                                <input type="text"  onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'"
+                                  id="end-date" name="end" placeholder="Дата" class="date text-decoration-underline border-0"
+                                  style="width: 100px; display: inline-block;">
+
+     </li>
+   </ul>
+    <div class=" main-charts ">
+        <div class="chart-container">
+         <div class="chart-name">Доходы</div>
+            <canvas id="income-diagramma"></canvas>
+        </div>
+<div class="separator"></div>
+        <div class="chart-container">
+         <div class="chart-name">Расходы</div>
+            <canvas id="expenses-diagramma"></canvas>
+        </div>
+    </div>
+
+</section>
