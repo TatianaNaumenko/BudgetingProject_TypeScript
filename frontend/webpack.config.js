@@ -27,7 +27,7 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/' // это мне не понятно
+    publicPath: '/' 
   },
   devServer: {
     compress: true, // Включить сжатие

@@ -1,0 +1,111 @@
+
+  <section class="wrapper-layout d-flex">
+    <aside class="sidebar d-flex flex-column flex-shrink-0 p-3 " id="sidebar">
+      <div class="logo-container d-flex align-items-center  justify-content-center">
+        <a href="/">
+          <img src="../images/logo-layout.png" alt="логотип">
+        </a>
+      </div>
+
+      <hr class="border-line">
+
+
+
+      <ul class="menu nav nav-pills flex-column mb-auto ">
+        <li>
+          <a href="/" class="main-menu-item nav-link d-flex flex-nowrap" aria-current="page" id="mainPage">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="icon bi bi-house"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z">
+              </path>
+            </svg>
+            Главная</a>
+        </li>
+        <li>
+          <a href="/incomes-expenses" class="main-menu-item nav-link  d-flex flex-nowrap">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="icon bi bi-cash-coin" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"></path>
+              <path
+                d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z">
+              </path>
+              <path
+                d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z">
+              </path>
+              <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567"></path>
+            </svg>
+            Доходы &amp; Расходы
+          </a>
+        </li>
+        <li class="dropdown-li" id="dropdown-li">
+          <a class="main-menu-item menu-dropdown-link  nav-link d-flex align-content-center justify-content-between collapsed "
+            href="javascript:void(0)" id="menu-dropdown-link" data-bs-toggle="collapse"  data-bs-target="#categories"
+            aria-expanded="false">
+            Категории
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" id="arrow"
+              class="arrow bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708">
+              </path>
+            </svg>
+          </a>
+          <ul class="main-menu-dropdown menu-dropdown  w-220px collapse" id="categories" data-bs-theme="light">
+            <li>
+              <a class="menu-dropdown-item nav-link  " href="/incomes">Доходы</a>
+            </li>
+            <li>
+              <a class="menu-dropdown-item nav-link " href="/expenses">Расходы</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="balance">
+        <span>Баланс: </span><span id="balance-amount"></span>
+      </div>
+      <hr class="border-line">
+
+      <div class="d-flex align-items-center user-content">
+        <a href="javascript:void(0)" class="d-flex align-items-center link-dark text-decoration-none" aria-expanded="false">
+          <div class="avatar d-flex justify-content-center align-items-center">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8 8C9.06087 8 10.0783 7.57857 10.8284 6.82843C11.5786 6.07828 12 5.06087 12 4C12 2.93913 11.5786 1.92172 10.8284 1.17157C10.0783 0.421427 9.06087 0 8 0C6.93913 0 5.92172 0.421427 5.17157 1.17157C4.42143 1.92172 4 2.93913 4 4C4 5.06087 4.42143 6.07828 5.17157 6.82843C5.92172 7.57857 6.93913 8 8 8ZM10.6667 4C10.6667 4.70724 10.3857 5.38552 9.88562 5.88562C9.38552 6.38572 8.70724 6.66667 8 6.66667C7.29276 6.66667 6.61448 6.38572 6.11438 5.88562C5.61428 5.38552 5.33333 4.70724 5.33333 4C5.33333 3.29276 5.61428 2.61448 6.11438 2.11438C6.61448 1.61428 7.29276 1.33333 8 1.33333C8.70724 1.33333 9.38552 1.61428 9.88562 2.11438C10.3857 2.61448 10.6667 3.29276 10.6667 4ZM16 14.6667C16 16 14.6667 16 14.6667 16H1.33333C1.33333 16 0 16 0 14.6667C0 13.3333 1.33333 9.33333 8 9.33333C14.6667 9.33333 16 13.3333 16 14.6667ZM14.6667 14.6613C14.6653 14.3333 14.4613 13.3467 13.5573 12.4427C12.688 11.5733 11.052 10.6667 8 10.6667C4.94667 10.6667 3.312 11.5733 2.44267 12.4427C1.53867 13.3467 1.336 14.3333 1.33333 14.6613H14.6667Z"
+                fill="#6C757D" />
+            </svg>
+
+          </div>
+          <div class="user-name" id="userName">
+        
+          </div>
+
+        </a>
+
+        <div class="signOut-wrapper">
+          <a href="javascript:void(0)" id="logOut">Выйти</a>
+        </div>
+      </div>
+    </aside>
+    
+    <main class="main-content-wrapper d-flex flex-column ">
+      <header class="header">
+        <h1 id="header-title">Название страницы</h1>
+      </header>
+      <!-- сюда будет вставляться контент страниц -->
+      <div id="content-layout" class="container-sm main-container">
+
+ 
+      </div>
+
+    </main>
+
+  
+  </section>
+
+<div class="sidebar_toggler" id="sidebar_toggler">
+  <a id="menu-toggle" class="menu-toggle">
+    <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+    <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+    <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+  </a>
+</div>
